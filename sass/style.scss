@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+.board {
+    background-color: #464c4a;
+    border: 8px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Secular One', sans-serif;
+    font-size: 42px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.create-column {
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    color: #53c9db;
+    background-color: #2d3331;
+    font-weight: bold;
+    margin: 0 auto;
+    display: inline-block;
+    &:hover {
+        background-color: #53c9db;
+        color: #fff;
+    }
+}
+
+.column {
+    background-color: #fff;
+    margin: 10px 20px;
+    border: 3px solid rgb(255, 166, 0);
+}
+
+.column-title {
+    margin: 10px 10px;
+    font-size: 28px;
+    border-bottom: 2px solid #000;
+}
+
+.column-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column-card-list {
+    min-height: 300px;
+    min-width: 300px;
+
+}
+
+.add-card {
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 5px;
+    display: block;
+}
+
+.card {
+
+}
