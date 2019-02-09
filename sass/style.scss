@@ -36,7 +36,7 @@
 .column {
     background-color: #fff;
     margin: 10px 20px;
-    border: 3px solid rgb(255, 166, 0);
+    border: 3px solid rgb(247, 189, 43);
 }
 
 .column-title {
@@ -54,7 +54,8 @@
 .column-card-list {
     min-height: 300px;
     min-width: 300px;
-
+    max-width: 300px;
+    padding: 0;
 }
 
 .add-card {
@@ -63,8 +64,43 @@
     font-size: 20px;
     margin: 5px 5px;
     display: block;
+    background-color: #2d3331;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
 }
 
 .card {
+    background-color: rgb(247, 189, 43);
+    margin: 10px;
+    min-height: 50px;
+    line-height: 18px;   
+    max-width: 300px;
+    overflow: auto;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 7px 9px 10px -1px rgba(0,0,0,0.52);
+    }
+}
+.card-description {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+}
 
+li {
+    list-style-type: none;
+}
+
+.btn-delete {
+    font-size: 16px;
+    background-color: #2d3331;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: 2px;
+    right: 2px;
 }
