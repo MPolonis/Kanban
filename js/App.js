@@ -12,15 +12,14 @@ function generateTemplate(name, data, basicElement) {
 
 
 //Zmienne dla nagłówków i url
-var prefix = 'https://cors-anywhere.herokuapp.com/';
-var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
+var baseUrl = 'https://cors-anywhere.herokuapp.com/' + 'https://kodilla.com/pl/bootcamp-api';
 var myHeaders = {
 	'X-Client-Id': '3619',
 	'X-Auth-Token': 'e90f49d734dc7132ab0091075852c4d1'
 };
 
 // funkcja odpytująca serwer o zasób tablicy
-fetch(prefix + baseUrl + '/board', { headers: myHeaders })
+fetch(baseUrl + '/board', { headers: myHeaders })
 	.then(function (resp) {
 		return resp.json();
 	})
